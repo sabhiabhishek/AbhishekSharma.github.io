@@ -10,7 +10,7 @@ Open `index.html` and search/replace these placeholders:
 
 | Find | Replace With |
 |------|--------------|
-| `[Your Name]` | Your actual name |
+| `[Your Name]` | Abhishek Sharma |
 | `[YN]` | Your initials |
 | `your.email@example.com` | Your email address |
 | `linkedin.com/in/yourprofile` | Your LinkedIn URL |
