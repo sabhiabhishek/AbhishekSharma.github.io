@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name] - Analytics, Product & Data Professional">
+    <meta name="keywords" content="analytics, data, product, portfolio, SQL, Python, data analysis">
+    <meta name="author" content="[Your Name]">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="[Your Name] - Analytics & Product Portfolio">
+    <meta property="og:description" content="Transforming data into actionable insights">
+    <meta property="og:type" content="website">
+    
+    <title>[Your Name] - Analytics & Product Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">☀️</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">[YN]</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label">Analytics • Product • Data</div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">[Your Name]</span>
+                </h1>
+                <p class="hero-description">
+                    Transforming complex data into actionable insights that drive product decisions 
+                    and business growth. Specialized in analytics, experimentation, and data-driven strategy.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-orb"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a data professional with a passion for uncovering insights that matter. 
+                        My background spans analytics, product management, and data science, allowing me 
+                        to bridge the gap between technical analysis and business strategy.
+                    </p>
+                    <p>
+                        With experience in experimentation frameworks, metrics design, and analytical 
+                        storytelling, I help teams make confident, data-informed decisions. I believe 
+                        the best insights are those that inspire action.
+                    </p>
+                </div>
+                
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-title">Analytics</h3>
+                        <ul class="skill-list">
+                            <li>SQL & Database Design</li>
+                            <li>Python (Pandas, NumPy, SciPy)</li>
+                            <li>Statistical Analysis</li>
+                            <li>Predictive Modeling</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-title">Tools & Platforms</h3>
+                        <ul class="skill-list">
+                            <li>Excel & Google Sheets</li>
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Google Analytics</li>
+                            <li>Git & Version Control</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-title">Product & Strategy</h3>
+                        <ul class="skill-list">
+                            <li>A/B Testing & Experimentation</li>
+                            <li>Metrics Framework Design</li>
+                            <li>User Behavior Analysis</li>
+                            <li>Product Analytics</li>
+                            <li>Business Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="analytics">Analytics</button>
+                    <button class="filter-btn" data-filter="product">Product</button>
+                    <button class="filter-btn" data-filter="ml">ML/AI</button>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="analytics">
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">Customer Churn Prediction Model</h3>
+                    <p class="project-problem">
+                        <strong>Problem:</strong> High customer churn rate (28%) was impacting 
+                        annual recurring revenue. The company needed to identify at-risk customers 
+                        before they churned.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Scikit-learn</span>
+                        <span class="tool-tag">SQL</span>
+                        <span class="tool-tag">Tableau</span>
+                    </div>
+                    <p class="project-insight">
+                        <strong>Key Insight:</strong> Built a predictive model (AUC 0.87) that 
+                        identified top 3 churn indicators: feature usage decline, support ticket 
+                        frequency, and billing issues. Enabled proactive retention campaigns that 
+                        reduced churn by 12%.
+                    </p>
+                    <a href="https://github.com/yourusername/churn-prediction" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="product">
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">E-commerce A/B Testing Framework</h3>
+                    <p class="project-problem">
+                        <strong>Problem:</strong> Product team lacked a systematic approach to 
+                        test new features. Experiments were inconsistent and results unreliable, 
+                        leading to poor product decisions.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Statistics</span>
+                        <span class="tool-tag">Google Analytics</span>
+                        <span class="tool-tag">Power BI</span>
+                    </div>
+                    <p class="project-insight">
+                        <strong>Key Insight:</strong> Designed and implemented a complete 
+                        experimentation framework with sample size calculators, statistical testing 
+                        procedures, and automated dashboards. Led to 23% increase in successful 
+                        product launches.
+                    </p>
+                    <a href="https://github.com/yourusername/ab-testing-framework" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="analytics">
+                    <div class="project-number">03</div>
+                    <h3 class="project-title">Revenue Attribution Dashboard</h3>
+                    <p class="project-problem">
+                        <strong>Problem:</strong> Marketing team couldn't accurately measure ROI 
+                        across 8 different channels. Budget allocation was based on guesswork rather 
+                        than data.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">SQL</span>
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Tableau</span>
+                        <span class="tool-tag">ETL</span>
+                    </div>
+                    <p class="project-insight">
+                        <strong>Key Insight:</strong> Built a multi-touch attribution model that 
+                        revealed social media was over-funded by 40% while email was under-funded 
+                        by 60%. Reallocation led to 34% improvement in marketing efficiency.
+                    </p>
+                    <a href="https://github.com/yourusername/attribution-dashboard" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-number">04</div>
+                    <h3 class="project-title">Recommendation System Optimization</h3>
+                    <p class="project-problem">
+                        <strong>Problem:</strong> Content recommendation engine had low click-through 
+                        rate (2.3%) and users frequently complained about irrelevant suggestions.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">TensorFlow</span>
+                        <span class="tool-tag">SQL</span>
+                        <span class="tool-tag">A/B Testing</span>
+                    </div>
+                    <p class="project-insight">
+                        <strong>Key Insight:</strong> Implemented collaborative filtering with 
+                        hybrid approach combining user behavior and content features. A/B test showed 
+                        68% increase in CTR and 45% increase in user engagement time.
+                    </p>
+                    <a href="https://github.com/yourusername/recommendation-system" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="product">
+                    <div class="project-number">05</div>
+                    <h3 class="project-title">User Onboarding Flow Analysis</h3>
+                    <p class="project-problem">
+                        <strong>Problem:</strong> 65% of new users abandoned the signup process. 
+                        The product team needed to understand drop-off points and optimize the flow.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">SQL</span>
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Google Analytics</span>
+                        <span class="tool-tag">Funnel Analysis</span>
+                    </div>
+                    <p class="project-insight">
+                        <strong>Key Insight:</strong> Identified that step 3 (payment info) had 
+                        42% drop-off due to lack of trust signals. Recommended and A/B tested security 
+                        badges and testimonials, reducing abandonment to 31%.
+                    </p>
+                    <a href="https://github.com/yourusername/onboarding-analysis" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-number">06</div>
+                    <h3 class="project-title">Sentiment Analysis Pipeline</h3>
+                    <p class="project-problem">
+                        <strong>Problem:</strong> Customer support team was overwhelmed with 10K+ 
+                        monthly reviews. Manual categorization was slow and inconsistent.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">NLP</span>
+                        <span class="tool-tag">BERT</span>
+                        <span class="tool-tag">Power BI</span>
+                    </div>
+                    <p class="project-insight">
+                        <strong>Key Insight:</strong> Developed automated sentiment classification 
+                        (92% accuracy) that surfaces critical negative feedback within 1 hour. 
+                        Reduced response time by 73% and improved CSAT score by 18 points.
+                    </p>
+                    <a href="https://github.com/yourusername/sentiment-pipeline" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            
+            <div class="case-studies">
+                <!-- Case Study 1 -->
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">Reducing Cart Abandonment by 42%</h3>
+                        <span class="case-study-tag">E-commerce Analytics</span>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-item">
+                            <h4 class="case-label">Situation</h4>
+                            <p>
+                                An e-commerce platform was experiencing 78% cart abandonment rate, 
+                                significantly above industry average (69%). Leadership needed to 
+                                understand root causes and implement data-driven solutions.
+                            </p>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Task</h4>
+                            <p>
+                                Lead comprehensive analysis of user behavior data, identify friction 
+                                points in the checkout process, and recommend optimization strategies 
+                                backed by statistical evidence and A/B testing.
+                            </p>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Action</h4>
+                            <ul>
+                                <li>Analyzed 500K+ checkout sessions using SQL and Python to identify 
+                                    drop-off patterns</li>
+                                <li>Conducted cohort analysis segmenting users by device, geography, 
+                                    and traffic source</li>
+                                <li>Implemented session recording analysis to understand user frustrations</li>
+                                <li>Designed and executed 6 sequential A/B tests targeting specific 
+                                    friction points</li>
+                                <li>Built real-time monitoring dashboard in Tableau to track improvements</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Result</h4>
+                            <ul>
+                                <li>Reduced cart abandonment from 78% to 45% (42% relative decrease)</li>
+                                <li>Increased revenue by $2.3M annually</li>
+                                <li>Mobile conversion rate improved by 67% after addressing mobile-specific issues</li>
+                                <li>Framework adopted company-wide for other conversion optimization initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 2 -->
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">Building Data-Driven Product Roadmap</h3>
+                        <span class="case-study-tag">Product Strategy</span>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-item">
+                            <h4 class="case-label">Situation</h4>
+                            <p>
+                                SaaS company's product roadmap was driven by HiPPO (Highest Paid Person's 
+                                Opinion) rather than user data. Feature adoption rates were below 30%, 
+                                and churn was increasing among power users.
+                            </p>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Task</h4>
+                            <p>
+                                Establish metrics framework and analytics infrastructure to guide product 
+                                decisions. Create prioritization model that balances user needs, business 
+                                impact, and technical feasibility.
+                            </p>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Action</h4>
+                            <ul>
+                                <li>Implemented product analytics instrumentation capturing 50+ key events</li>
+                                <li>Developed RICE scoring framework (Reach, Impact, Confidence, Effort)</li>
+                                <li>Conducted 40+ user interviews combined with behavioral data analysis</li>
+                                <li>Built automated feature adoption and engagement tracking dashboards</li>
+                                <li>Established quarterly business reviews with data-driven success metrics</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Result</h4>
+                            <ul>
+                                <li>Feature adoption rates increased from 30% to 67% within 6 months</li>
+                                <li>Product-led growth contributed to 45% increase in free-to-paid conversion</li>
+                                <li>Reduced feature development waste by 40% through better prioritization</li>
+                                <li>NPS score improved from 32 to 58</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 3 -->
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <h3 class="case-study-title">Scaling Analytics for Rapid Growth</h3>
+                        <span class="case-study-tag">Data Infrastructure</span>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-item">
+                            <h4 class="case-label">Situation</h4>
+                            <p>
+                                Fast-growing startup (5x annual growth) was drowning in data requests. 
+                                The single-person analytics team had 3-week backlog, and stakeholders 
+                                were making decisions without data.
+                            </p>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Task</h4>
+                            <p>
+                                Build self-service analytics infrastructure that empowers non-technical 
+                                teams to answer their own questions while maintaining data quality and 
+                                governance standards.
+                            </p>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Action</h4>
+                            <ul>
+                                <li>Designed and implemented centralized data warehouse on BigQuery</li>
+                                <li>Created semantic layer with dbt for consistent metric definitions</li>
+                                <li>Built 15 self-service dashboards in Tableau covering key business areas</li>
+                                <li>Developed SQL training program for 40+ non-technical employees</li>
+                                <li>Established data governance framework and documentation standards</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-item">
+                            <h4 class="case-label">Result</h4>
+                            <ul>
+                                <li>Reduced ad-hoc analysis requests by 72%</li>
+                                <li>Average time to insight decreased from 2 weeks to 2 hours</li>
+                                <li>60% of company now runs their own analyses independently</li>
+                                <li>Enabled data team to focus on strategic projects vs firefighting</li>
+                                <li>Data-driven decision making increased from 40% to 85% of major initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-intro">
+                I'm always interested in discussing analytics, product strategy, and data opportunities. 
+                Feel free to reach out through any of the channels below.
+            </p>
+            
+            <div class="contact-grid">
+                <a href="mailto:your.email@example.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>your.email@example.com</p>
+                </a>
+                
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/yourprofile</p>
+                </a>
+                
+                <a href="https://github.com/yourusername" target="_blank" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>github.com/yourusername</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 [Your Name]. Built with care and curiosity.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
